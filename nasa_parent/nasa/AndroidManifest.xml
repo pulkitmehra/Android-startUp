@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myexample.nasa.activity"
+    android:versionCode="1"
+    android:versionName="2.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <!--  -->
+    <application
+        android:name="com.myexample.nasa.modules.ListViewApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity android:name=".ListViewActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddTimeEntryActivity" >
+        </activity>
+    </application>
+
+</manifest>

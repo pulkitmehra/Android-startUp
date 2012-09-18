@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:id="@+id/time_item_view">
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/notes_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp" />
+
+</LinearLayout>
