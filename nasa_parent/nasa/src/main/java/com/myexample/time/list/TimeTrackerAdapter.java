@@ -11,7 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.google.inject.Inject;
-import com.myexample.nasa.activity.R;
+import com.myexample.R;
 
 
 @ContextSingleton

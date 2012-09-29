@@ -1,13 +1,14 @@
 package com.myexample.nasa.activity;
 
 import roboguice.activity.RoboActivity;
-
 import roboguice.inject.ContentView;
 import roboguice.inject.InjectView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import com.myexample.R;
 
 @ContentView(R.layout.add_entry)
 public class AddTimeEntryActivity extends RoboActivity {

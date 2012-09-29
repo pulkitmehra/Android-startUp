@@ -23,8 +23,8 @@ import android.os.Bundle;
 import com.google.inject.AbstractModule;
 import com.google.inject.Inject;
 import com.google.inject.util.Modules;
+import com.myexample.R;
 import com.myexample.database.TimeTrackerDatabase;
-import com.myexample.nasa.activity.R;
 import com.myexample.time.list.TimeRecord;
 import com.xtremelabs.robolectric.Robolectric;
 

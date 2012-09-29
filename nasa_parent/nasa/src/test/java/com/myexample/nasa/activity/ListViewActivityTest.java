@@ -28,6 +28,7 @@ import android.view.MenuItem;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.util.Modules;
+import com.myexample.R;
 import com.myexample.database.dao.TimeTrackerDao;
 import com.myexample.time.list.TimeRecord;
 import com.myexample.time.list.TimeTrackerAdapter;

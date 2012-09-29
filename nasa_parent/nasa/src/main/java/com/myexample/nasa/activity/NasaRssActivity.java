@@ -1,7 +1,6 @@
 package com.myexample.nasa.activity;
 
 import java.io.IOException;
-
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -20,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.myexample.R;
 import com.myexample.nasa.rss.IotdHandler;
 
 public class NasaRssActivity extends Activity {

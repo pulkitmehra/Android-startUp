@@ -21,7 +21,7 @@ import android.widget.TextView;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.util.Modules;
-import com.myexample.nasa.activity.R;
+import com.myexample.R;
 import com.xtremelabs.robolectric.Robolectric;
 
 @RunWith(RobolectricRoboTestRunner.class)

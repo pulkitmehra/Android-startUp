@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.myexample.nasa.activity"
+    package="com.myexample"
     android:versionCode="1"
     android:versionName="2.0" >
 
@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddTimeEntryActivity" >
+        <activity android:name="com.myexample.nasa.activity.AddTimeEntryActivity" >
         </activity>
     </application>
 

@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.widget.ListView;
 
 import com.google.inject.Inject;
+import com.myexample.R;
 import com.myexample.database.dao.TimeTrackerDao;
 import com.myexample.time.list.TimeRecord;
 import com.myexample.time.list.TimeTrackerAdapter;
