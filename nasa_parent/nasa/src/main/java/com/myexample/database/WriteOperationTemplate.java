@@ -16,7 +16,7 @@ public abstract class WriteOperationTemplate extends DatabaseOperations
 	public Object execute() {
 		SQLiteDatabase sqLiteDatabase = openWritable(sqlLiteOpenHelper);
 		Object executeWrite = executeWrite(sqLiteDatabase);
-		close(sqlLiteOpenHelper);
+		//close(sqlLiteOpenHelper);
 		return executeWrite;
 	}
 

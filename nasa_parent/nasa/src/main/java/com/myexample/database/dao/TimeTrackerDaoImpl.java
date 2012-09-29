@@ -86,10 +86,12 @@ public class TimeTrackerDaoImpl implements TimeTrackerDao {
 						TimeTrackerDatabase.TIME_TABLE,
 						TimeTrackerDatabase.ALL_COLUMNS, null, null, null,
 						null, null, null, null);
-				cursor.moveToFirst();
-				while (!cursor.isAfterLast()) {
-					timeRecords.add(convertToTimeRecord(cursor));
-					cursor.moveToNext();
+				if (cursor != null) {
+					cursor.moveToFirst();
+					while (!cursor.isAfterLast()) {
+						timeRecords.add(convertToTimeRecord(cursor));
+						cursor.moveToNext();
+					}
 				}
 				return timeRecords;
 			}

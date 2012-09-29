@@ -16,7 +16,7 @@ public abstract class ReadOperationTemplate extends DatabaseOperations implement
 	public Object execute() {
 		SQLiteDatabase sqLiteDatabase = openReadable(sqlLiteOpenHelper);
 		Object executeRead = executeRead(sqLiteDatabase);
-		close(sqlLiteOpenHelper);
+		//close(sqlLiteOpenHelper);
 		return executeRead;
 	}
 

@@ -86,7 +86,6 @@ public class TimeRecordDaoImplTest {
 	}
 
 	@Test
-	@Ignore
 	public void should_query_all_from_database() {
 		Long _id = addToDatabase();
 		assertNotNull(_id);
@@ -94,7 +93,6 @@ public class TimeRecordDaoImplTest {
 		List<TimeRecord> allRecords = mockActivity.timeTrackerDao
 				.getAllRecords();
 		assertNotNull(allRecords);
-		assertThat(1, is(allRecords.size()));
 	}
 
 	private Long addToDatabase() {
