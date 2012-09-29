@@ -1,4 +1,4 @@
-package com.myexample.nasa.activity;
+package com.myexample.activity;
 
 import roboguice.activity.RoboActivity;
 import roboguice.inject.ContentView;

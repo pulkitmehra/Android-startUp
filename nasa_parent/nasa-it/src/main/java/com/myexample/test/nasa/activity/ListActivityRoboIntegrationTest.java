@@ -4,7 +4,7 @@ import android.annotation.TargetApi;
 import android.test.ActivityInstrumentationTestCase2;
 
 import com.jayway.android.robotium.solo.Solo;
-import com.myexample.nasa.activity.ListViewActivity;
+import com.myexample.activity.ListViewActivity;
 
 @TargetApi(16)
 public class ListActivityRoboIntegrationTest extends

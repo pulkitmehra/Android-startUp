@@ -1,4 +1,4 @@
-package com.myexample.nasa.activity;
+package com.myexample.activity;
 
 import static com.xtremelabs.robolectric.Robolectric.shadowOf;
 import static junit.framework.Assert.assertTrue;
@@ -19,6 +19,7 @@ import android.widget.EditText;
 import com.google.inject.AbstractModule;
 import com.google.inject.util.Modules;
 import com.myexample.R;
+import com.myexample.activity.AddTimeEntryActivity;
 import com.xtremelabs.robolectric.Robolectric;
 
 @RunWith(RobolectricRoboTestRunner.class)

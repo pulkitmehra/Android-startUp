@@ -1,4 +1,4 @@
-package com.myexample.nasa.activity;
+package com.myexample.activity;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,11 +1,11 @@
-package com.myexample.nasa.modules;
+package com.myexample.modules;
 
 import roboguice.RoboGuice;
 import android.app.Application;
 
 import com.google.inject.util.Modules;
 
-public class ListViewApplication extends Application {
+public class MainViewApplication extends Application {
 
 	@Override
 	public void onCreate() {
@@ -14,7 +14,7 @@ public class ListViewApplication extends Application {
 				this,
 				RoboGuice.DEFAULT_STAGE,
 				Modules.override(RoboGuice.newDefaultRoboModule(this)).with(
-						new ListViewModule()));
+						new MainViewModule()));
 	}
 
 }

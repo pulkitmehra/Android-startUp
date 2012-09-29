@@ -1,4 +1,4 @@
-package com.myexample.nasa.activity;
+package com.myexample.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
