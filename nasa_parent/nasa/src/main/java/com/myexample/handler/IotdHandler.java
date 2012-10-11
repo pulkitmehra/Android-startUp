@@ -1,4 +1,4 @@
-package com.myexample.nasa.rss;
+package com.myexample.handler;
 
 import java.io.IOException;
 import java.net.URL;

@@ -20,7 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.myexample.R;
-import com.myexample.nasa.rss.IotdHandler;
+import com.myexample.handler.IotdHandler;
 
 public class NasaRssActivity extends Activity {
 

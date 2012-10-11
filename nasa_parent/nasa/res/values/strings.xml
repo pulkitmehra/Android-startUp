@@ -2,20 +2,7 @@
 <resources>
 
     <string name="nasa_image_title">Decorating the Sky</string>
-    <string name="nasa_image_description">This mosaic image taken by NASA\’s Wide-field
-Infrared Survey Explorer, or WISE, features
-three nebulae that are part of the giant Orion
-Molecular Cloud--the Flame nebula, the Horsehead
-nebula and NGC 2023. Despite its name, there isThis mosaic image taken by NASA\’s Wide-field
-Infrared Survey Explorer, or WISE, features
-three nebulae that are part of the giant Orion
-Molecular Cloud--the Flame nebula, the Horsehead
-nebula and NGC 2023. Despite its name, there isThis mosaic image taken by NASA\’s Wide-field
-Infrared Survey Explorer, or WISE, features
-three nebulae that are part of the giant Orion
-Molecular Cloud--the Flame nebula, the Horsehead
-nebula and NGC 2023. Despite its name, there is</string>
-    <string name="nasa_image_date">Mon, 27 Dec 2010 00:00:00 EST</string>
+    <string name="nasa_image_description">ee</string>
    <!--  <string name="app_name">Nasa RSS Feed</string> -->
     <string name="app_name">Select Examples</string>
     <string name="refresh">Refresh</string>
@@ -26,5 +13,10 @@ nebula and NGC 2023. Despite its name, there is</string>
     <string name="cancel_label">Cancel</string>
     <string name="add_label">Add</string>
     <string name="description_pending">description pending</string>
+    <string name="nasa_image_date">image date</string>
+    <string name="item_description">item Description</string>
+    <string name="item_hint">item hint</string>
+    <string name="addItemContentDescription">add item</string>
+    <string name="addItemHint">item hint</string>
 
 </resources>

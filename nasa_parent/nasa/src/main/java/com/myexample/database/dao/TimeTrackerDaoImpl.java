@@ -13,7 +13,7 @@ import com.google.inject.Inject;
 import com.myexample.database.ReadOperationTemplate;
 import com.myexample.database.TimeTrackerDatabase;
 import com.myexample.database.WriteOperationTemplate;
-import com.myexample.time.list.TimeRecord;
+import com.myexample.dto.TimeRecord;
 
 @ContextSingleton
 public class TimeTrackerDaoImpl implements TimeTrackerDao {

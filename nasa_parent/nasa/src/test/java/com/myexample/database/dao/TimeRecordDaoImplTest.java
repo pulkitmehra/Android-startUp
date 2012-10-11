@@ -25,7 +25,7 @@ import com.google.inject.Inject;
 import com.google.inject.util.Modules;
 import com.myexample.R;
 import com.myexample.database.TimeTrackerDatabase;
-import com.myexample.time.list.TimeRecord;
+import com.myexample.dto.TimeRecord;
 import com.xtremelabs.robolectric.Robolectric;
 
 @RunWith(RobolectricRoboTestRunner.class)

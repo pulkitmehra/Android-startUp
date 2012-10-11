@@ -1,4 +1,4 @@
-package com.myexample.time.list;
+package com.myexample.adapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.google.inject.Inject;
 import com.myexample.R;
+import com.myexample.dto.TimeRecord;
 
 
 @ContextSingleton

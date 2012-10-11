@@ -14,9 +14,9 @@ import android.widget.ListView;
 
 import com.google.inject.Inject;
 import com.myexample.R;
+import com.myexample.adapter.TimeTrackerAdapter;
 import com.myexample.database.dao.TimeTrackerDao;
-import com.myexample.time.list.TimeRecord;
-import com.myexample.time.list.TimeTrackerAdapter;
+import com.myexample.dto.TimeRecord;
 
 @ContentView(R.layout.time_list)
 public class ListViewActivity extends RoboActivity {

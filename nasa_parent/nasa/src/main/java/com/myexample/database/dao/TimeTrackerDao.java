@@ -2,7 +2,7 @@ package com.myexample.database.dao;
 
 import java.util.List;
 
-import com.myexample.time.list.TimeRecord;
+import com.myexample.dto.TimeRecord;
 
 public interface TimeTrackerDao {
 

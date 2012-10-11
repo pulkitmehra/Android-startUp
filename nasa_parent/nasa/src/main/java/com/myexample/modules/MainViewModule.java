@@ -2,10 +2,10 @@ package com.myexample.modules;
 
 import com.google.inject.AbstractModule;
 import com.myexample.adapter.ImageViewAdapter;
+import com.myexample.adapter.TimeTrackerAdapter;
 import com.myexample.database.TimeTrackerDatabase;
 import com.myexample.database.dao.TimeTrackerDao;
 import com.myexample.database.dao.TimeTrackerDaoImpl;
-import com.myexample.time.list.TimeTrackerAdapter;
 
 public class MainViewModule extends AbstractModule {
 

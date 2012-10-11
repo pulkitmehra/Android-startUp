@@ -1,4 +1,4 @@
-package com.myexample.time.list;
+package com.myexample.dto;
 
 public class TimeRecord {
 
