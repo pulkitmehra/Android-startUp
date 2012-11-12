@@ -22,18 +22,14 @@ public class TimeTrackerDaoImpl implements TimeTrackerDao {
 	protected TimeTrackerDatabase database;
 
 	public TimeRecord addRecord(final TimeRecord timeRecord) {
-		WriteOperationTemplate writeOperationTemplate = new WriteOperationTemplate(
-				database) {
+		WriteOperationTemplate writeOperationTemplate = new WriteOperationTemplate(database) {
 
 			@Override
 			public Object executeWrite(SQLiteDatabase sqLiteDatabase) {
 				ContentValues values = new ContentValues();
-				values.put(TimeTrackerDatabase.COLUMN_TIME,
-						timeRecord.getTime());
-				values.put(TimeTrackerDatabase.COLUMN_NOTES,
-						timeRecord.getNotes());
-				Long _id = sqLiteDatabase.insert(
-						TimeTrackerDatabase.TIME_TABLE, null, values);
+				values.put(TimeTrackerDatabase.COLUMN_TIME, timeRecord.getTime());
+				values.put(TimeTrackerDatabase.COLUMN_NOTES, timeRecord.getNotes());
+				Long _id = sqLiteDatabase.insert(TimeTrackerDatabase.TIME_TABLE, null, values);
 
 				return getRecord(_id);
 			}
@@ -47,10 +43,7 @@ public class TimeTrackerDaoImpl implements TimeTrackerDao {
 
 			@Override
 			public Object executeRead(SQLiteDatabase sqLiteDatabase) {
-				Cursor cursor = sqLiteDatabase.query(
-						TimeTrackerDatabase.TIME_TABLE,
-						TimeTrackerDatabase.ALL_COLUMNS, "_rowid_ = "
-								+ timeRecordId, null, null, null, null);
+				Cursor cursor = sqLiteDatabase.query(TimeTrackerDatabase.TIME_TABLE, TimeTrackerDatabase.ALL_COLUMNS, "_rowid_ = " + timeRecordId, null, null, null, null);
 				cursor.moveToFirst();
 				TimeRecord timeRecord = convertToTimeRecord(cursor);
 				return timeRecord;
@@ -60,12 +53,9 @@ public class TimeTrackerDaoImpl implements TimeTrackerDao {
 
 	private TimeRecord convertToTimeRecord(Cursor cursor) {
 
-		Integer id = cursor.getInt(cursor
-				.getColumnIndex(TimeTrackerDatabase.COLUMN_ID));
-		String time = cursor.getString(cursor
-				.getColumnIndex(TimeTrackerDatabase.COLUMN_TIME));
-		String notes = cursor.getString(cursor
-				.getColumnIndex(TimeTrackerDatabase.COLUMN_NOTES));
+		Integer id = cursor.getInt(cursor.getColumnIndex(TimeTrackerDatabase.COLUMN_ID));
+		String time = cursor.getString(cursor.getColumnIndex(TimeTrackerDatabase.COLUMN_TIME));
+		String notes = cursor.getString(cursor.getColumnIndex(TimeTrackerDatabase.COLUMN_NOTES));
 
 		TimeRecord record = new TimeRecord();
 		record.setId(id);
@@ -82,10 +72,11 @@ public class TimeTrackerDaoImpl implements TimeTrackerDao {
 			@Override
 			public Object executeRead(SQLiteDatabase sqLiteDatabase) {
 				List<TimeRecord> timeRecords = new ArrayList<TimeRecord>();
-				Cursor cursor = sqLiteDatabase.query(true,
-						TimeTrackerDatabase.TIME_TABLE,
-						TimeTrackerDatabase.ALL_COLUMNS, null, null, null,
-						null, null, null, null);
+				// Cursor cursor = sqLiteDatabase.query(true,
+				// TimeTrackerDatabase.TIME_TABLE,
+				// TimeTrackerDatabase.ALL_COLUMNS, null, null, null,
+				// null, null, null, null);
+				Cursor cursor = sqLiteDatabase.query(true, TimeTrackerDatabase.TIME_TABLE, TimeTrackerDatabase.ALL_COLUMNS, null, null, null, null, null, null, null);
 				if (cursor != null) {
 					cursor.moveToFirst();
 					while (!cursor.isAfterLast()) {

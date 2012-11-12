@@ -1,56 +1,27 @@
 package com.myexample.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import roboguice.activity.RoboActivity;
+import roboguice.activity.RoboFragmentActivity;
 import roboguice.inject.ContentView;
-import roboguice.inject.InjectView;
 import android.os.Bundle;
-import android.view.KeyEvent;
-import android.view.View;
-import android.view.View.OnKeyListener;
-import android.widget.ArrayAdapter;
-import android.widget.EditText;
-import android.widget.ListView;
 
+import com.google.inject.Inject;
 import com.myexample.R;
+import com.myexample.fragments.TodoFragment;
+import com.myexample.handler.FragmentHandler;
 
-@ContentView(R.layout.todo_list)
-public class ToDoListActivity extends RoboActivity implements OnKeyListener {
+@ContentView(R.layout.todo_layout)
+public class ToDoListActivity extends RoboFragmentActivity {
 
-	@InjectView(R.id.todo_myListView)
-	protected ListView listView;
+	@Inject
+	protected FragmentHandler fragmentHandler;
 
-	@InjectView(R.id.todo_myEditText)
-	protected EditText editText;
-
-	protected List<String> contentList;
-	protected ArrayAdapter<String> listViewAdapter;
+	@Inject
+	protected TodoFragment todoFragment;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		contentList = new ArrayList<String>();
-
-		listViewAdapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, contentList);
-		listView.setAdapter(listViewAdapter);
-		editText.setOnKeyListener(this);
-
-	}
-
-	@Override
-	public boolean onKey(View v, int keyCode, KeyEvent event) {
-		if (event.getAction() == KeyEvent.ACTION_DOWN)
-			if ((keyCode == KeyEvent.KEYCODE_DPAD_CENTER)
-					|| (keyCode == KeyEvent.KEYCODE_ENTER)) {
-				contentList.add(0, editText.getText().toString());
-				listViewAdapter.notifyDataSetChanged();
-				editText.setText("");
-				return true;
-			}
-		return false;
+		fragmentHandler.addFragment(todoFragment, R.id.todo_content, this);
 	}
 
 }

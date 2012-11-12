@@ -6,6 +6,7 @@ import com.myexample.adapter.TimeTrackerAdapter;
 import com.myexample.database.TimeTrackerDatabase;
 import com.myexample.database.dao.TimeTrackerDao;
 import com.myexample.database.dao.TimeTrackerDaoImpl;
+import com.myexample.fragments.TodoFragment;
 
 public class MainViewModule extends AbstractModule {
 
@@ -15,6 +16,8 @@ public class MainViewModule extends AbstractModule {
 		bind(TimeTrackerDatabase.class);
 		bind(TimeTrackerDao.class).to(TimeTrackerDaoImpl.class);
 		bind(ImageViewAdapter.class);
+		bind(TodoFragment.class);
+//		bind(new TypeLiteral<ArrayAdapter<Note>>(){}).to(CustomNoteListAdapter.class);
 	}
 
 }
