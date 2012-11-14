@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/todo_rowName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:fadingEdge="vertical"
+        android:padding="14dp"
+        android:text="Row Name"
+        android:scrollbars="vertical"
+        />
+    
+
+    <TextView
+        android:id="@+id/todo_rowDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:fadingEdge="vertical"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:text="Row Date" />
+
+</RelativeLayout>
